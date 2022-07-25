@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 3px solid green;
-}
+} */
 
 html,
 body {
@@ -19,11 +19,12 @@ body {
     height: 75%;
     column-gap: 2em;
     padding: 1em;
+    border-radius: 1em;
 }
 
 #Bitmoji {
-    max-width: 30%;
-    min-width: 10%;
+    max-width: 50%;
+    min-width: 20%;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1em;
 }
@@ -48,7 +49,7 @@ h1 {
 
 }
 
-li {
+.lititle {
     width: 5em;
     text-align: center;
     font-size: 1.5em;
@@ -76,8 +77,8 @@ li {
     justify-content: space-between;
     padding: 1em;
     align-items: center;
-    height: 100%;
-    background-color: grey;
+    height: 50%;
+    margin: 1em;
 }
 
 .penguin {
@@ -85,6 +86,7 @@ li {
     animation-name: waggel;
     animation-iteration-count: infinite;
     animation-duration: 1s;
+    border-radius: 1em;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -94,8 +96,13 @@ article {
     text-decoration: underline;
     font-family: handschrift;
     font-size: 2em;
-    color: orange;
+    color: rgb(187, 137, 45);
     letter-spacing: 5px;
+    border: 3px dashed black
+}
+
+.skilllist {
+    color: black;
 }
 
 @keyframes waggel {
@@ -106,16 +113,47 @@ article {
     50% {
         transform: rotate(-10deg);
     }
-    
-    
+
+
 
     100% {
         transform: rotate(10deg);
     }
 }
 
+h3 {
+    font-family: handschrift;
+    font-size: 1.5em;
+    padding-left: 3em;
+    text-decoration: underline wavy;
+    background-color: rgba(240, 248, 255, 0.397);
+    margin: 1em;
+    padding: 0.5em;
+    text-align: left;
+}
+
+footer {
+    background: linear-gradient(25deg,green,lightgreen);
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    column-gap: 1em;
+    align-items: center;
+}
+
+h2 {
+    background-color: rgba(255, 136, 0, 0.336);
+}
+
 @media screen and (max-width: 1000px) {
-    #Kopf{
+    #Kopf {
         flex-direction: column;
         font-size: 0.1;
         row-gap: 2em;
@@ -123,11 +161,52 @@ article {
 
     #inhalt {
         flex-direction: column;
-        justify-content:space-evenly ;
+        justify-content: space-evenly;
+        height: 55em;
     }
 
     h1 {
         font-size: 2em;
     }
-    
+
+    .penguin {
+        height: 20%;
+    }
+
+    section {
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
+    iframe {
+        max-width: 90%;
+    }
+
 }
+
+#ende {
+    background-color: grey;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+ /* unvisited link */
+ a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: wheat;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: green;
+  }
+
+
+  
