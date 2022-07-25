@@ -6,6 +6,7 @@ html,
 body {
     margin: auto;
     height: auto;
+    height: 100%;
 }
 
 #Kopf {
@@ -15,12 +16,14 @@ body {
     flex-direction: row;
     background: linear-gradient(45deg, rgba(255, 255, 0, 0.863), rgb(255, 51, 0));
     background-color: black;
-    height: 50em;
+    height: 75%;
     column-gap: 2em;
+    padding: 1em;
 }
 
 #Bitmoji {
-    width: 25%;
+    max-width: 30%;
+    min-width: 10%;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1em;
 }
@@ -73,7 +76,8 @@ li {
     justify-content: space-between;
     padding: 1em;
     align-items: center;
-    height: 30em;
+    height: 100%;
+    background-color: grey;
 }
 
 .penguin {
@@ -120,6 +124,10 @@ article {
     #inhalt {
         flex-direction: column;
         justify-content:space-evenly ;
+    }
+
+    h1 {
+        font-size: 2em;
     }
     
 }
